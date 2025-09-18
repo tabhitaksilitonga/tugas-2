@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="back-button">
+      <button onclick="history.back()">⬅ Kembali ke WEB TUGAS 1</button>
+    </div>
+    <h1 style="text-align: center">FORM REGISTRATION</h1>
+
+    <form class="container">
+      <!--Bagian Akun-->
+      <div class="box">
+        <h2>Akun</h2>
+        <table>
+          <tr>
+            <td><label for="email">E-mail : </label></td>
+            <td>
+              <input
+                type="email"
+                id="email"
+                class="rounded-input"
+                placeholder="Masukkan Email Anda"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="usn">Username : </label></td>
+            <td>
+              <input
+                type="text"
+                id="usn"
+                class="rounded-input"
+                placeholder="Masukkan Username"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="pw">Password : </label></td>
+            <td>
+              <input
+                type="password"
+                id="pw"
+                class="rounded-input"
+                placeholder="Minimal 8 Karakter"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="kpw">Konfirmasi Password : </label></td>
+            <td>
+              <input
+                type="password"
+                id="kpw"
+                class="rounded-input"
+                placeholder="Minimal 8 Karakter"
+              />
+            </td>
+          </tr>
+        </table>
+      </div>
+      <!--Bagian Data Diri-->
+      <div class="box">
+        <h2>Data Diri</h2>
+        <table>
+          <tr>
+            <td><label for="nama">Nama : </label></td>
+            <td>
+              <input
+                type="text"
+                id="nama"
+                class="rounded-input"
+                placeholder="Masukkan Nama Lengkap"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label>Jenis Kelamin : </label></td>
+            <td>
+              <input type="radio" id="cwo" name="jenisKelamin" /><label
+                for="cwo"
+                >Laki-laki</label
+              >
+              <input type="radio" id="cwe" name="jenisKelamin" /><label
+                for="cwe"
+                >Perempuan</label
+              >
+            </td>
+          </tr>
+          <tr>
+            <td><label for="tglLahir">Tanggal Lahir : </label></td>
+            <td><input type="date" id="tglLahir" /></td>
+          </tr>
+          <tr>
+            <td><label for="agama">Agama : </label></td>
+            <td>
+              <select id="agama">
+                <option>Islam</option>
+                <option>Kristen</option>
+                <option>Katolik</option>
+                <option>Hindu</option>
+                <option>Buddha</option>
+                <option>Konghucu</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="telp">No. Telepon : </label></td>
+            <td>
+              <input
+                type="tel"
+                id="telp"
+                class="rounded-input"
+                placeholder="+62"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label>Hobi : </label></td>
+            <td>
+              <input type="checkbox" id="menyanyi" /><label for="menyanyi"
+                >Menyanyi</label
+              >
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <input type="checkbox" id="berenang" /><label for="berenang"
+                >Berenang</label
+              >
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <input type="checkbox" id="memancing" /><label for="memancing"
+                >Memancing</label
+              >
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <input type="checkbox" id="olahraga" /><label for="olahraga"
+                >Olahraga</label
+              >
+            </td>
+          </tr>
+          <tr>
+            <td><label for="address">Alamat : </label></td>
+            <td>
+              <textarea
+                id="address"
+                class="rounded-input"
+                placeholder="Masukan Alamat Lengkap Anda"
+              ></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="idcard">Kartu Identitas : </label></td>
+            <td>
+              <div class="form-upload">
+                <input
+                  type="file"
+                  id="idcard"
+                  name="idcard"
+                  accept=".jpg,.jpeg,.png,.pdf"
+                />
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </form>
+    <!--Bagian submit & persetujuan-->
+    <div class="form-footer">
+      <input type="checkbox" id="preregis" />
+      <label for="preregis"
+        >Saya menyetujui<u> Persyaratan Layanan, Perjanjian Pengguna,</u> dan
+        <u>Kebijakan Privasi</u></label
+      >
+      <br />
+      <button type="submit" value="submit">Submit</button>
+    </div>
+  </body>
+</html>
