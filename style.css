@@ -83,6 +83,27 @@ body {
   background-color: #f33f84;
 }
 
+.button-link {
+  position: absolute; /* biar bisa ditempelkan di pojok */
+  top: 20px; /* jarak dari atas */
+  right: 20px; /* jarak dari kanan */
+}
+
+.button-link button {
+  padding: 8px 16px;
+  background-color: #ffc5d3;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.button-link button:hover {
+  background-color: #f33f84;
+}
+
 h1 {
   margin-bottom: 9px;
 }
+
